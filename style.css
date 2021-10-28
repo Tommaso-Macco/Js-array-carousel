@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+
+.items {
+    width: 80%;
+}
+
+.thumbs {
+    width: 20%;
+}
+
+.container img {
+    width: 100%;
+}
+
+.thumbs img {
+    height: 100%;
+}
+
+.active {
+    display: block;
+}
+
+.thumb.active {
+    /* border: 5px solid #fff; */
+}
