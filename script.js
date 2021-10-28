@@ -25,4 +25,24 @@ const text = [
 
 const itemsCont = document.querySelector(".items")
 const thumbCont = document.querySelector(".thumbs")
+const textCont = document.querySelector(".text")
 
+for (let i = 0; i <= items.length; i++) {
+    itemsCont.innerHTML += 
+        `<div class="item">
+            <img src="${items[i]}" alt="${items[i]}">
+        </div>`
+    textCont.innerHTML +=
+        `<div class="textinside">
+            <h1 class="title">${title[i]}</h1>
+            <p class="bio">${text[i]}</p>
+        </div>`
+    thumbCont.innerHTML +=
+        `<div class="thumb">
+            <img src="${items[i]}" alt="${items[i]}">
+        </div>` 
+}
+
+console.log(itemsCont);
+console.log(thumbCont);
+console.log(textCont);
